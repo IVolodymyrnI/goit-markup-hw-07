@@ -1,0 +1,21 @@
+// Common logo
+.logo {
+	display: inline-block;
+
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	color: $accent-color;
+	text-decoration: none;
+}
+
+// Header logo
+.page-header__logo {
+	color: #000000;
+}
+
+// Footer logo
+.page-footer__logo {
+	color: #ffffff;
+	margin-bottom: 9px;
+}

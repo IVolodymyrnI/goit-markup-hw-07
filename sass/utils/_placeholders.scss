@@ -1,0 +1,49 @@
+// Buttons' template
+%btn {
+	min-width: 200px;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: $secondary-texts-color;
+	background-color: $accent-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	transition: background-color $time-cubic-bezier,
+		transform $time-cubic-bezier;
+
+	&:active {
+		transform: scale(0.95);
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $hover-btn-color;
+		cursor: pointer;
+	}
+}
+
+// Social media cells' template
+%social-list__link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: $icon-color;
+	border-radius: 50%;
+
+	transition: background-color $time-cubic-bezier,
+		color $time-cubic-bezier;
+
+	&:hover,
+	&:focus {
+		color: $primary-pages-color;
+		background-color: $accent-color;
+	}
+}

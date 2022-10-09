@@ -1,0 +1,46 @@
+.section--grey-bg {
+	@extend .section;
+	background-color: $secondary-pages-color;
+}
+
+.team-list {
+	display: flex;
+	list-style-type: none;
+}
+
+.team-list__item {
+	text-align: center;
+	line-height: 1.14;
+	background-color: $primary-pages-color;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-member__content {
+	padding: 30px 32px;
+}
+
+.team-member__name {
+	margin-bottom: 10px;
+
+	font-size: 16px;
+	font-weight: 500;
+	color: $heads-color;
+}
+
+.team-member__position {
+	font-size: 16px;
+	margin-bottom: 16px;
+	color: $primary-texts-color;
+}
+
+.team-list__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.social-list__link {
+	@extend %social-list__link;
+	fill: currentColor;
+}

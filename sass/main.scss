@@ -1,0 +1,25 @@
+// Base & utils
+@import './utils/variables';
+@import './base/common';
+@import './utils/utilities';
+@import './utils/placeholders';
+
+// Common
+@import './layouts/common/logo';
+@import './layouts/common/social-media';
+
+// Header
+@import './layouts/header';
+
+// Body
+@import './layouts/index/hero-section';
+@import './layouts/index/our-rules-section.scss';
+@import './layouts/index/what-we-do-section.scss';
+@import './layouts/index/our-team-section';
+@import './layouts/index/customers-section.scss';
+
+// Footer
+@import './layouts/footer.scss';
+
+// Modal window
+@import './components/modal-window/modal-window';

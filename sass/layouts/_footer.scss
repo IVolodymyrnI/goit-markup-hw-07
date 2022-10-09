@@ -1,0 +1,120 @@
+/* Footer */
+.page-footer {
+	background-color: $third-pages-color;
+
+	&--padding {
+		padding: 60px 0;
+	}
+}
+
+.conteiner--footer-flex {
+	display: flex;
+	align-items: baseline;
+}
+
+.page-footer__contacts-wrapper {
+	min-width: 231px;
+	margin-right: 70px;
+}
+
+/* Footer-address/contacts */
+.footer-contacts__list {
+	list-style-type: none;
+}
+
+%footer-contacts__link {
+	font-style: normal;
+	line-height: 1.71;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	transition: color $time-cubic-bezier;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.footer-contacts__link {
+	@extend %footer-contacts__link;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__link--address {
+	@extend %footer-contacts__link;
+	color: $primary-pages-color;
+}
+
+/* Footer social media */
+.page-footer__label {
+	margin-bottom: 20px;
+
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: $secondary-texts-color;
+}
+
+.social-list__link-footer {
+	@extend %social-list__link;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	fill: $primary-pages-color;
+}
+
+/* Footer newsletter subscribe */
+.page-footer__subscribe {
+	display: flex;
+	margin-left: 93px;
+}
+
+.form-field {
+	width: 358px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field__input {
+	width: 100%;
+	height: 50px;
+	padding-left: 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: transparent;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: $secondary-texts-color;
+	caret-color: #ffffff;
+	outline: none;
+
+	// Placeholder
+	&::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	// Eliminate background autofill
+	&:-webkit-autofill {
+		-webkit-text-fill-color: $secondary-texts-color;
+	}
+}
+
+.form-field__btn {
+	@extend %btn;
+	position: relative;
+	padding: 10px 82px 10px 48px;
+	margin-left: 12px;
+	align-self: flex-end;
+}
+
+.footer-form-icon {
+	position: absolute;
+	top: 13px;
+	right: 28px;
+}

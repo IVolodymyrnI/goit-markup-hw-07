@@ -1,0 +1,36 @@
+.section--padding {
+	padding-top: 0;
+}
+
+.what-we-list {
+	display: flex;
+	list-style-type: none;
+}
+
+.what-we-list__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.what-we-content {
+	position: relative;
+}
+
+.what-we-content__label {
+	width: 370px;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $secondary-texts-color;
+	background-color: rgba(47, 48, 58, 0.8);
+}
